@@ -59,40 +59,40 @@ export default function Home() {
           <h1 className="font-burtons text-xl text-gray-800 hover:text-[#378CE7] dark:hover:text-[#41C9E2] dark:text-white transition-colors duration-300 mb-4 md:mb-0">
             ahamed abdul khader
           </h1>
-          <ul className="flex items-center space-x-4 sm:space-x-2 md:space-x-4 lg:space-x-6 xl:space-x-8 2xl:space-x-10">
+          <ul className="flex items-center space-x-4 sm:space-x-4 md:space-x-4 lg:space-x-6 xl:space-x-8 2xl:space-x-10">
             <a
               href="#skills"
-              className="text-gray-800 hover:text-[#378CE7] dark:text-white dark:hover:text-[#41C9E2] transition-colors duration-300"
+              className="font-semibold text-gray-800 hover:text-[#378CE7] dark:text-white dark:hover:text-[#41C9E2] transition-colors duration-300"
             >
               Skills
             </a>
             <a
               href="#projects"
-              className="text-gray-800 hover:text-[#378CE7] dark:text-white dark:hover:text-[#41C9E2] transition-colors duration-300"
+              className="font-semibold text-gray-800 hover:text-[#378CE7] dark:text-white dark:hover:text-[#41C9E2] transition-colors duration-300"
             >
               Projects
             </a>
             <a
               href="#contact"
-              className="text-gray-800 hover:text-[#378CE7] dark:text-white dark:hover:text-[#41C9E2] transition-colors duration-300"
+              className="font-semibold text-gray-800 hover:text-[#378CE7] dark:text-white dark:hover:text-[#41C9E2] transition-colors duration-300"
             >
               Contact
             </a>
             <li>
-              <BsFillMoonStarsFill
-                onClick={() => setDarkMode(!darkMode)}
-                className="cursor-pointer text-2xl transition-transform duration-300 transform hover:scale-110"
-              />
-            </li>
-            <li>
               <a
-                className="bg-gradient-to-r from-[#41C9E2] to-[#378CE7] hover:from-[#162c44] hover:to-[#162c44] transition duration-300 text-white px-4 py-2 border-none rounded-md "
+                className="font-semibold bg-gradient-to-r from-[#41C9E2] to-[#378CE7] hover:from-[#3c6a9b] hover:to-[#25486d] transition duration-300 text-white px-4 py-2 border-none rounded-md "
                 href="/Ahamed_Abdul_Khader_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Resume
               </a>
+            </li>
+            <li>
+              <BsFillMoonStarsFill
+                onClick={() => setDarkMode(!darkMode)}
+                className="cursor-pointer text-2xl transition-transform duration-300 transform hover:scale-110"
+              />
             </li>
           </ul>
         </nav>
@@ -103,7 +103,7 @@ export default function Home() {
           <div className="text-center p-4">
             <div className="md:flex md:items-center md:justify-center">
               <div className="md:w-1/2 md:mr-10">
-                <h2 className="text-4xl md:text-5xl py-2 text-[#67C6E3] font-medium dark:text-[#67C6E3] flex items-center justify-center">
+                <h2 className="text-4xl md:text-5xl py-2 text-[#67C6E3] font-semibold dark:text-[#67C6E3] flex items-center justify-center">
                   <span className="whitespace-nowrap">{`Hi , I'm Ahamed `}</span>
                   <span
                     role="img"
@@ -113,10 +113,10 @@ export default function Home() {
                     👋🏻
                   </span>
                 </h2>
-                <h3 className="text-lg md:text-2xl py-2 dark:text-white">
+                <h3 className="text-lg font-semibold md:text-2xl py-2 dark:text-white">
                   MERN Stack Developer | React JS Developer
                 </h3>
-                <p className="text-sm md:text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-md md:max-w-xl mx-auto">
+                <p className="text-sm font-medium md:text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-md md:max-w-xl mx-auto">
                   {`Experienced MERN Stack Developer crafting top-notch web
                     applications with expertise in React, Node.js, MongoDB, and more.
                     Explore how I can contribute to your team's success by connecting
@@ -164,95 +164,115 @@ export default function Home() {
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={rlogo} width={70} height={60} />
 
-                <p className="px-3 py-4 text-teal-600">React</p>
+                <p className="px-3 py-4 font-semibold text-[#162c44]">React</p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={nodelogo} width={50} height={50} />
-                <p className="px-4 py-4 text-teal-600">Node.js</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">
+                  Node.js
+                </p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={mongodblogo} width={30} height={60} />
-                <p className="px-4 py-4 text-teal-600">MongoDB</p>
+                <p className="px-4 py-4  font-semibold text-[#162c44]">
+                  MongoDB
+                </p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={expresslogo} width={50} height={50} />
-                <p className="px-4 py-4 text-teal-600">Express.js</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">
+                  Express.js
+                </p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={relogo} width={50} height={50} />
-                <p className="px-4 py-4 text-teal-600">Redux</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">Redux</p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={gitlogo} width={50} height={50} />
-                <p className="px-4 py-4 text-teal-600">Git</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">Git</p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={githublogo} width={50} height={50} />
-                <p className="px-4 py-4 text-teal-600">Github</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">Github</p>
               </div>
             </div>
             <div className="text-center shadow-lg p-5 md:p-10 rounded-xl my-5 md:my-10 dark:bg-white flex-1">
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={jslogo} width={50} height={50} />
-                <p className="px-4 py-4 text-teal-600">JavaScript</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">
+                  JavaScript
+                </p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={htmllogo} width={55} height={55} />
-                <p className="px-4 py-4 text-teal-600">HTML</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">HTML</p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={csslogo} width={50} height={50} />
-                <p className="px-4 py-4 text-teal-600">CSS</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">CSS</p>
               </div>
 
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={bslogo} width={60} height={50} />
-                <p className="px-4 py-4 text-teal-600">Bootstrap</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">
+                  Bootstrap
+                </p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={sasslogo} width={60} height={50} />
-                <p className="px-4 py-4 text-teal-600">Sass</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">Sass</p>
               </div>
 
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={tailwindlogo} width={70} height={50} />
-                <p className="px-1 py-4 text-teal-600">Tailwind CSS</p>
+                <p className="px-1 py-4 font-semibold text-[#162c44]">
+                  Tailwind CSS
+                </p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={awslogo} width={70} height={50} />
-                <p className="px-4 py-4 text-teal-600">AWS</p>
+                <p className="px-4 py-4 font-semibold text-[#162c44]">AWS</p>
               </div>
             </div>
             <div className="text-center shadow-lg p-5 md:p-10 rounded-xl my-5 md:my-10 dark:bg-white flex-1">
               <div className="flex justify-center py-2 items-center">
                 <Image alt="img" src={awscertlogo} width={100} height={100} />
-                <p className="py-4 text-teal-600">AWS Cloud Practitioner</p>
+                <p className="py-4 font-semibold text-[#162c44]">
+                  AWS Cloud Practitioner
+                </p>
               </div>
               <div className="flex justify-center py-2 items-center">
                 <Image alt="img" src={rrlogo} width={60} height={40} />
-                <p className="px-1.5 py-4 text-teal-600">React Router</p>
+                <p className="px-1.5 py-4 font-semibold text-[#162c44]">
+                  React Router
+                </p>
               </div>
 
               <div className="flex justify-center py-2 items-center">
                 <Image alt="img" src={rqlogo} width={50} height={50} />
-                <p className="px-3 py-4 text-teal-600">React Query</p>
+                <p className="px-3 py-4 font-semibold text-[#162c44]">
+                  React Query
+                </p>
               </div>
               <div className="flex justify-center py-3 items-center">
                 <Image alt="img" src={firebaselogo} width={60} height={65} />
-                <p className="px-3 py-4 text-teal-600">Firebase</p>
+                <p className="px-3 py-4 font-semibold text-[#162c44]">
+                  Firebase
+                </p>
               </div>
 
               <div className="flex justify-center py-3 items-center">
                 <Image alt="img" src={scrumlogo} width={70} height={70} />
-                <p className="px-2 text-teal-600">Scrum</p>
+                <p className="px-2 font-semibold text-[#162c44]">Scrum</p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={jiralogo} width={60} height={60} />
-                <p className="px-4 text-teal-600">Jira</p>
+                <p className="px-4 font-semibold text-[#162c44]">Jira</p>
               </div>
               <div className="flex justify-center py-4 items-center">
                 <Image alt="img" src={vscodelogo} width={50} height={50} />
-                <p className="px-4 text-teal-600">VS Code</p>
+                <p className="px-4 font-semibold text-[#162c44]">VS Code</p>
               </div>
             </div>
           </div>
@@ -267,7 +287,7 @@ export default function Home() {
 
           <div className="flex flex-col items-center space-y-10 py-2 lg:flex-row lg:flex-wrap">
             <div className="w-full relative">
-              <h4 className="text-xl py-2 dark:text-white text-center">
+              <h4 className="text-xl font-semibold py-2 dark:text-white text-center">
                 Food Ordering Application
               </h4>
               <div className="relative rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
@@ -319,7 +339,7 @@ export default function Home() {
             </div>
 
             <div className="w-full  relative">
-              <h4 className="text-xl py-2 dark:text-white text-center ">
+              <h4 className="text-xl font-semibold py-2 dark:text-white text-center ">
                 Support Ticket System
               </h4>
               <div className="relative rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
@@ -370,7 +390,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full relative">
-              <h4 className="text-xl py-2 dark:text-white text-center ">
+              <h4 className="text-xl font-semibold py-2 dark:text-white text-center ">
                 Bussiness Website
               </h4>
               <div className="relative rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">

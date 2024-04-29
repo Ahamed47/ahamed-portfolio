@@ -137,7 +137,7 @@ export default function Contact() {
             ></textarea>
             <button
               type="submit"
-              className="bg-gradient-to-r from-[#41C9E2] to-[#378CE7] text-white hover:from-[#162c44] hover:to-[#162c44] font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
+              className="bg-gradient-to-r from-[#41C9E2] to-[#378CE7] text-white hover:from-[#3c6a9b] hover:to-[#25486d] font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
             >
               Submit Form
             </button>

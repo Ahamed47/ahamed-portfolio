@@ -33,7 +33,7 @@ const ArrowToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 p-2 rounded-full bg-gradient-to-r from-[#41C9E2] to-[#378CE7] hover:from-[#162c44] hover:to-[#162c44] transition duration-300 text-white"
+          className="fixed bottom-4 right-4 p-2 rounded-full bg-gradient-to-r from-[#41C9E2] to-[#378CE7] hover:from-[#3c6a9b] hover:to-[#25486d] transition duration-300 text-white"
         >
           <AiOutlineArrowUp />
         </button>
