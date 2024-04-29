@@ -11,28 +11,28 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import emoji from "../public/ahamed-wave.png";
-import react from "../public/react-logo.webp";
-import reactquery from "../public/react-query-logo.png";
-import redux from "../public/redux-logo.png";
-import reactrouter from "../public/react-router-logo.png";
+import rlogo from "../public/react-logo.webp";
+import rqlogo from "../public/react-query-logo.png";
+import relogo from "../public/redux-logo.png";
+import rrlogo from "../public/react-router-logo.png";
 
 import awscert from "../public/AWS-Certified_Cloud-Practitioner-logo.png";
-import aws from "../public/aws-logo.png";
-import bootstrap from "../public/bootstrap-logo.jpeg";
-import js from "../public/JavaScript-logo.png";
-import css from "../public/css-logo.png";
-import git from "../public/git-logo.png";
-import github from "../public/github-logo.png";
-import html from "../public/html-logo.webp";
-import tailwind from "../public/tailwind-css-logo.png";
-import sass from "../public/sass-logo.png";
-import jira from "../public/jira-logo.png";
-import node from "../public/node-logo.png";
-import mongodb from "../public/mongodb-logo.png";
-import scrum from "../public/scrum-logo.png";
-import express from "../public/expressjs-logo.png";
-import firebase from "../public/firebase-logo.png";
-import vscode from "../public/visual-studio-code-logo.webp";
+import awslogo from "../public/aws-logo.png";
+import bslogo from "../public/bootstrap-logo.jpeg";
+import jslogo from "../public/JavaScript-logo.png";
+import csslogo from "../public/css-logo.png";
+import gitlogo from "../public/git-logo.png";
+import githublogo from "../public/github-logo.png";
+import htmllogo from "../public/html-logo.webp";
+import tailwindlogo from "../public/tailwind-css-logo.png";
+import sasslogo from "../public/sass-logo.png";
+import jiralogo from "../public/jira-logo.png";
+import nodelogo from "../public/node-logo.png";
+import mongodblogo from "../public/mongodb-logo.png";
+import scrumlogo from "../public/scrum-logo.png";
+import expresslogo from "../public/expressjs-logo.png";
+import firebaslogoe from "../public/firebase-logo.png";
+import vscodelogo from "../public/visual-studio-code-logo.webp";
 import Image from "next/image";
 import web1 from "../public/project-ss1.png";
 import web2 from "../public/project-ss2.png";
@@ -165,96 +165,96 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-4">
             <div className="text-center shadow-lg p-5 md:p-10 rounded-xl my-5 md:my-10 dark:bg-white flex-1 w-full sm:w-auto">
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={react} width={70} height={60} />
+                <Image alt="img" src={rlogo} width={70} height={60} />
 
                 <p className="px-3 py-4 text-teal-600">React</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={node} width={50} height={50} />
+                <Image alt="img" src={nodelogo} width={50} height={50} />
                 <p className="px-4 py-4 text-teal-600">Node.js</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={mongodb} width={30} height={60} />
+                <Image alt="img" src={mongodblogo} width={30} height={60} />
                 <p className="px-4 py-4 text-teal-600">MongoDB</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={express} width={50} height={50} />
+                <Image alt="img" src={expresslogo} width={50} height={50} />
                 <p className="px-4 py-4 text-teal-600">Express.js</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={redux} width={50} height={50} />
+                <Image alt="img" src={relogo} width={50} height={50} />
                 <p className="px-4 py-4 text-teal-600">Redux</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={git} width={50} height={50} />
+                <Image alt="img" src={gitlogo} width={50} height={50} />
                 <p className="px-4 py-4 text-teal-600">Git</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={github} width={50} height={50} />
+                <Image alt="img" src={githublogo} width={50} height={50} />
                 <p className="px-4 py-4 text-teal-600">Github</p>
               </div>
             </div>
             <div className="text-center shadow-lg p-5 md:p-10 rounded-xl my-5 md:my-10 dark:bg-white flex-1 w-full sm:w-auto">
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={js} width={50} height={50} />
+                <Image alt="img" src={jslogo} width={50} height={50} />
                 <p className="px-4 py-4 text-teal-600">JavaScript</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={html} width={55} height={55} />
+                <Image alt="img" src={htmllogo} width={55} height={55} />
                 <p className="px-4 py-4 text-teal-600">HTML</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={css} width={50} height={50} />
+                <Image alt="img" src={csslogo} width={50} height={50} />
                 <p className="px-4 py-4 text-teal-600">CSS</p>
               </div>
 
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={bootstrap} width={60} height={50} />
+                <Image alt="img" src={bslogo} width={60} height={50} />
                 <p className="px-4 py-4 text-teal-600">Bootstrap</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={sass} width={60} height={50} />
+                <Image alt="img" src={sasslogo} width={60} height={50} />
                 <p className="px-4 py-4 text-teal-600">Sass</p>
               </div>
 
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={tailwind} width={70} height={50} />
+                <Image alt="img" src={tailwindlogo} width={70} height={50} />
                 <p className="px-1 py-4 text-teal-600">Tailwind CSS</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={aws} width={70} height={50} />
+                <Image alt="img" src={awslogo} width={70} height={50} />
                 <p className="px-4 py-4 text-teal-600">AWS</p>
               </div>
             </div>
             <div className="text-center shadow-lg p-5 md:p-10 rounded-xl my-5 md:my-10 dark:bg-white flex-1 w-full sm:w-auto">
               <div className="flex justify-center py-2 items-center">
-                <Image alt="img" src={awscert} width={100} height={100} />
+                <Image alt="img" src={awscertlogo} width={100} height={100} />
                 <p className="py-4 text-teal-600">AWS Cloud Practitioner</p>
               </div>
               <div className="flex justify-center py-2 items-center">
-                <Image alt="img" src={reactrouter} width={60} height={40} />
+                <Image alt="img" src={rrlogo} width={60} height={40} />
                 <p className="px-1.5 py-4 text-teal-600">React Router</p>
               </div>
 
               <div className="flex justify-center py-2 items-center">
-                <Image alt="img" src={reactquery} width={50} height={50} />
+                <Image alt="img" src={rqlogo} width={50} height={50} />
                 <p className="px-3 py-4 text-teal-600">React Query</p>
               </div>
               <div className="flex justify-center py-3 items-center">
-                <Image alt="img" src={firebase} width={60} height={65} />
+                <Image alt="img" src={firebaselogo} width={60} height={65} />
                 <p className="px-3 py-4 text-teal-600">Firebase</p>
               </div>
 
               <div className="flex justify-center py-3 items-center">
-                <Image alt="img" src={scrum} width={70} height={70} />
+                <Image alt="img" src={scrumlogo} width={70} height={70} />
                 <p className="px-2 text-teal-600">Scrum</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={jira} width={60} height={60} />
+                <Image alt="img" src={jiralogo} width={60} height={60} />
                 <p className="px-4 text-teal-600">Jira</p>
               </div>
               <div className="flex justify-center py-4 items-center">
-                <Image alt="img" src={vscode} width={50} height={50} />
+                <Image alt="img" src={vscodelogo} width={50} height={50} />
                 <p className="px-4 text-teal-600">VS Code</p>
               </div>
             </div>
