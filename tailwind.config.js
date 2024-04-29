@@ -12,6 +12,9 @@ module.exports = {
         burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],
       },
+      screens: {
+        sm: "370px",
+      },
     },
   },
   plugins: [],
