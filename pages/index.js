@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useMediaQuery } from "@react-hook/media-query";
 import {
   AiFillMail,
   AiFillLinkedin,
@@ -44,7 +45,7 @@ import ArrowToTopButton from "./arrowupbutton";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-
+  const isSmallScreen = useMediaQuery("(max-width: 640px)");
   return (
     <div className={`sm:scroll-smooth ${darkMode ? "dark" : ""}`}>
       <Head>
@@ -290,7 +291,7 @@ export default function Home() {
               <h4 className="text-xl font-semibold py-2 dark:text-white text-center">
                 Food Ordering Application
               </h4>
-              <div className="relative rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
+              <div className="relative rounded-lg transition duration-300 hover:shadow-xl">
                 <a
                   href="https://pizza-mania-tau.vercel.app/"
                   target="_blank"
@@ -302,10 +303,10 @@ export default function Home() {
                     src={web1}
                     alt="Your Image Alt Text"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-tr from-[#008DDA]/90 to-[#ED5AB3]/90 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <div className="text-white font-bold text-lg">
+                  <div className="absolute hover:overflow-auto max-h-full max-w-full inset-0 flex items-center justify-center bg-gradient-to-tr from-[#008DDA]/90 to-[#ED5AB3]/90 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-white dark:text-black font-semibold">
                       <div className="absolute inset-0  bg-opacity-80 p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
-                        <p className="text-sm text-center mb-4">
+                        <p className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
                           This React-powered Online Food Ordering Application is
                           a robust web-based system designed to streamline the
                           process of ordering your favourite pizza. It enhances
@@ -313,22 +314,27 @@ export default function Home() {
                           the online ordering process for food enthusiasts and
                           customers.
                         </p>
-                        <div className="text-sm text-center mt-2">
-                          <p>Technologies Used:</p>
-                          <ul>
-                            <li>React</li>
-                            <li>Redux & Redux Toolkit</li>
-                            <li>React Router v6</li>
-                            <li>Tailwind CSS</li>
-                            <li>React Router Form</li>
-                            <li>RESTful APIs integration</li>
-                            <li>
-                              React Router useFetcher, useLoaderData for data
-                              fetching
-                            </li>
-                          </ul>
+                        <div className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
+                          <p>
+                            {!isSmallScreen && (
+                              <>
+                                <span>Technologies Used:</span>
+                                <span>
+                                  {[
+                                    "React",
+                                    "Redux & Redux Toolkit",
+                                    "React Router v6",
+                                    "Tailwind CSS",
+                                    "React Router Form",
+                                    "RESTful APIs integration",
+                                    "React Router useFetcher, useLoaderData for data fetching",
+                                  ].join(", ")}
+                                </span>
+                              </>
+                            )}
+                          </p>
                         </div>
-                        <p className="text-lg text-black text-center mt-4">
+                        <p className="sm:text-xs md:text-sm lg:text-base text-black text-center lg:mt-4 md:mt-2  sm:mt-0">
                           Click to visit👆
                         </p>
                       </div>
@@ -356,11 +362,11 @@ export default function Home() {
                     src={web2}
                     alt="Your Image Alt Text"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-tr from-[#008DDA]/90 to-[#ED5AB3]/90 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <div className="text-white font-bold text-lg">
+                  <div className="absolute  hover:overflow-auto max-h-full max-w-full inset-0 flex items-center justify-center bg-gradient-to-tr from-[#008DDA]/90 to-[#ED5AB3]/90 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-black dark:text-white  font-semibold">
                       <div className="absolute inset-0  bg-opacity-80 p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
-                        <p className="text-sm text-center mb-4">
-                          System The Support Desk Application is a robust and
+                        <p className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
+                          The Support Desk Application is a robust and
                           user-friendly web-based platform built on the MERN
                           (MongoDB Express.js, React, Node.js) stack. It
                           empowers businesses to deliver exceptional customer
@@ -368,19 +374,27 @@ export default function Home() {
                           issues, and facilitating efficient communication
                           between support agents and customers.
                         </p>
-                        <div className="text-sm text-center mt-2">
-                          <p>Technologies Used:</p>
-                          <ul>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>MongoDB</li>
-                            <li>Redux</li>
-                            <li>RESTful APIs for integrations</li>
-                            <li>Authentication and Authorization Mechanisms</li>
-                          </ul>
+                        <div className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
+                          <p>
+                            {!isSmallScreen && (
+                              <>
+                                <span>Technologies Used:</span>
+                                <span>
+                                  {[
+                                    "React",
+                                    "Node.js",
+                                    "Express.js",
+                                    "MongoDB",
+                                    "Redux",
+                                    "RESTful APIs for integrations",
+                                    "Authentication and Authorization Mechanisms",
+                                  ].join(", ")}
+                                </span>
+                              </>
+                            )}
+                          </p>
                         </div>
-                        <p className="text-lg text-black text-center mt-4">
+                        <p className="sm:text-xs md:text-sm lg:text-base text-black text-center lg:mt-4 md:mt-2  sm:mt-0">
                           Click to visit👆
                         </p>
                       </div>
@@ -407,10 +421,10 @@ export default function Home() {
                     alt="Your Image Alt Text"
                   />
 
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-tr from-[#008DDA]/90 to-[#ED5AB3]/90 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <div className="text-white font-bold text-lg">
+                  <div className="absolute  hover:overflow-auto max-h-full max-w-full inset-0 flex items-center justify-center bg-gradient-to-tr from-[#008DDA]/90 to-[#ED5AB3]/90 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-white  font-semibold">
                       <div className="absolute inset-0  bg-opacity-80 p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
-                        <p className="text-sm text-center mb-4">
+                        <p className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
                           This business website is crafted using Tailwind CSS,
                           HTML, CSS, and JavaScript. It serves as a
                           comprehensive platform to showcase essential company
@@ -419,16 +433,24 @@ export default function Home() {
                           The website is designed to be responsive to all screen
                           sizes, ensuring a seamless experience for visitors.
                         </p>
-                        <div className="text-sm text-center mt-2">
-                          <p>Technologies Used:</p>
-                          <ul>
-                            <li>Tailwind CSS</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                          </ul>
+                        <div className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
+                          <p>
+                            {!isSmallScreen && (
+                              <>
+                                <span>Technologies Used:</span>
+                                <span>
+                                  {[
+                                    "Tailwind CSS",
+                                    "JavaScript",
+                                    "HTML",
+                                    "CSS",
+                                  ].join(", ")}
+                                </span>
+                              </>
+                            )}
+                          </p>
                         </div>
-                        <p className="text-lg text-black text-center mt-4">
+                        <p className="sm:text-xs md:text-sm lg:text-base text-black text-center lg:mt-4 md:mt-2  sm:mt-0">
                           Click to visit👆
                         </p>
                       </div>
