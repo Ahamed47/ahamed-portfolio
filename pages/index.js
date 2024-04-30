@@ -310,8 +310,8 @@ export default function Home() {
                           This React-powered Online Food Ordering Application is
                           a robust web-based system designed to streamline the
                           process of ordering your favourite pizza. It enhances
-                          user experiences, simplifies operations, and optimizes
-                          the online ordering process for food enthusiasts and
+                          user experiences, simplifies operations & optimizes
+                          the online ordering process for food enthusiasts &
                           customers.
                         </p>
                         <div className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
@@ -334,7 +334,7 @@ export default function Home() {
                             )}
                           </p>
                         </div>
-                        <p className="sm:text-xs md:text-sm lg:text-base text-black text-center lg:mt-4 md:mt-2  sm:mt-0">
+                        <p className="sm:text-xs md:text-sm lg:text-base text-black dark:text-white text-center lg:mt-4 md:mt-2  sm:mt-0">
                           Click to visit👆
                         </p>
                       </div>
@@ -363,16 +363,15 @@ export default function Home() {
                     alt="Your Image Alt Text"
                   />
                   <div className="absolute  hover:overflow-auto max-h-full max-w-full inset-0 flex items-center justify-center bg-gradient-to-tr from-[#008DDA]/90 to-[#ED5AB3]/90 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <div className="text-black dark:text-white  font-semibold">
+                    <div className="text-white dark:text-black  font-semibold">
                       <div className="absolute inset-0  bg-opacity-80 p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
                         <p className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
-                          The Support Desk Application is a robust and
+                          The Support Desk Application is a robust &
                           user-friendly web-based platform built on the MERN
-                          (MongoDB Express.js, React, Node.js) stack. It
-                          empowers businesses to deliver exceptional customer
-                          support by centralizing support requests, tracking
-                          issues, and facilitating efficient communication
-                          between support agents and customers.
+                          stack. It empowers businesses to deliver exceptional
+                          customer support by centralizing support requests,
+                          tracking issues & facilitating efficient communication
+                          between support agents & customers.
                         </p>
                         <div className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
                           <p>
@@ -387,14 +386,14 @@ export default function Home() {
                                     "MongoDB",
                                     "Redux",
                                     "RESTful APIs for integrations",
-                                    "Authentication and Authorization Mechanisms",
+                                    "Authentication & Authorization Mechanisms",
                                   ].join(", ")}
                                 </span>
                               </>
                             )}
                           </p>
                         </div>
-                        <p className="sm:text-xs md:text-sm lg:text-base text-black text-center lg:mt-4 md:mt-2  sm:mt-0">
+                        <p className="sm:text-xs md:text-sm lg:text-base text-black dark:text-white text-center lg:mt-4 md:mt-2  sm:mt-0">
                           Click to visit👆
                         </p>
                       </div>
@@ -422,16 +421,16 @@ export default function Home() {
                   />
 
                   <div className="absolute  hover:overflow-auto max-h-full max-w-full inset-0 flex items-center justify-center bg-gradient-to-tr from-[#008DDA]/90 to-[#ED5AB3]/90 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <div className="text-white  font-semibold">
+                    <div className="text-white dark:text-black  font-semibold">
                       <div className="absolute inset-0  bg-opacity-80 p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
                         <p className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
                           This business website is crafted using Tailwind CSS,
-                          HTML, CSS, and JavaScript. It serves as a
-                          comprehensive platform to showcase essential company
-                          details, including product information, contact
-                          details, testimonials, and a functional contact form.
-                          The website is designed to be responsive to all screen
-                          sizes, ensuring a seamless experience for visitors.
+                          HTML, CSS & JavaScript. It serves as a comprehensive
+                          platform to showcase essential company details,
+                          including product information, contact details,
+                          testimonials & contact form. The website is designed
+                          to be responsive to all screen sizes, ensuring a
+                          seamless experience for visitors.
                         </p>
                         <div className="sm:text-xs md:text-sm lg:text-base text-center lg:mt-4 md:mt-2  sm:mt-0">
                           <p>
@@ -450,7 +449,7 @@ export default function Home() {
                             )}
                           </p>
                         </div>
-                        <p className="sm:text-xs md:text-sm lg:text-base text-black text-center lg:mt-4 md:mt-2  sm:mt-0">
+                        <p className="sm:text-xs md:text-sm lg:text-base text-black dark:text-white text-center lg:mt-4 md:mt-2  sm:mt-0">
                           Click to visit👆
                         </p>
                       </div>
