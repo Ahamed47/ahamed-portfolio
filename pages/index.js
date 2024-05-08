@@ -28,6 +28,7 @@ import htmllogo from "../public/html-logo.webp";
 import tailwindlogo from "../public/tailwind-css-logo.png";
 import sasslogo from "../public/sass-logo.png";
 import jiralogo from "../public/jira-logo.png";
+import tslogo from "../public/Typescript-logo.png";
 import nodelogo from "../public/node-logo.png";
 import mongodblogo from "../public/mongodb-logo.png";
 import scrumlogo from "../public/scrum-logo.png";
@@ -244,8 +245,14 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex justify-center py-2 items-center">
+                <Image alt="img" src={tslogo} width={50} height={50} />
+                <p className="px-3 py-4 font-semibold text-[#162c44]">
+                  TypeScript
+                </p>
+              </div>
+              <div className="flex justify-center py-2 items-center">
                 <Image alt="img" src={rrlogo} width={60} height={40} />
-                <p className="px-1.5 py-4 font-semibold text-[#162c44]">
+                <p className="px-2 py-4 font-semibold text-[#162c44]">
                   React Router
                 </p>
               </div>
